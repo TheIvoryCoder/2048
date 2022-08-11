@@ -1,0 +1,145 @@
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+background: #444;
+}
+
+h1 {
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+top: 32px;
+font-size: 50px;
+background-color: rgb(255, 242, 99);
+border: solid 7px rgb(227, 215, 77);
+padding: 10px 20px;
+border-top-left-radius: 17px;
+border-top-right-radius: 17px;
+z-index: 2;
+}
+
+.scoreboard {
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+width: 400px;
+display: flex;
+justify-content: space-between;
+top: 95px;
+border: solid 7px rgb(154, 154, 154);
+padding: 10px 20px 20px;
+background-color: lightgray;
+border-radius: 17px;
+font-size: 17px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.scoreboard span {
+width: 70px;
+font-weight: 800;
+color: #555;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: flex-start;
+text-transform: uppercase;
+}
+
+.scoreboard span b {
+position: relative;
+bottom: 5px;
+color: #000;
+font-weight: 800;
+font-size: 20px;
+}
+
+.wrapper {
+z-index: 3;
+position: absolute;
+width: 462px;
+height: 462px;
+justify-content: center;
+align-items: center;
+border: solid 1px gray;
+border-radius: 5px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-wrap: wrap;
+background-color: gray;
+}
+.v0,
+.v2,
+.v4,
+.v8,
+.v16,
+.v32,
+.v64,
+.v128,
+.v256,
+.v512,
+.v1024,
+.v2048 {
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+font-weight: 700;
+color: #666;
+background-color: darkgray;
+width: 100px;
+height: 100px;
+margin: 7px;
+border-radius: 4px;
+}
+.v8,
+.v16,
+.v32,
+.v64,
+.v128,
+.v256,
+.v512,
+.v1024,
+.v2048 {
+color: #eee;
+}
+.v2 {
+background-color: lightgray;
+}
+.v4 {
+background-color: rgb(229, 222, 171);
+}
+.v8 {
+background-color: rgb(230, 180, 73);
+}
+.v16 {
+background-color: rgb(215, 141, 37);
+}
+.v32 {
+background-color: rgb(255, 122, 74);
+}
+.v64 {
+background-color: rgb(228, 72, 16);
+}
+.v128 {
+background-color: rgb(215, 202, 105);
+}
+.v256 {
+background-color: rgb(202, 189, 90);
+}
+.v512 {
+background-color: rgb(212, 178, 67);
+}
+.v1024 {
+background-color: rgb(215, 165, 0);
+}
+.v2048 {
+background-color: rgb(231, 170, 0);
+}
